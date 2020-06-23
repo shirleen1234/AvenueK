@@ -1,0 +1,363 @@
+/* General Element */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+p {
+  line-height: 1.55;
+  color: #fff;
+  font-size: 400;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+a, a:hover, a:active, a:visited, a:focus {
+  text-decoration: none !important;
+}
+
+.btn {
+  background-color: #E300B2;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #fff;
+  padding: 5px 25px 5px 25px;
+  margin: 0px 5px 0px 5px;
+}
+
+.btn:hover {
+  -moz-box-shadow: 0 0 10px #ccc;
+  -webkit-box-shadow: 0 0 10px #ccc;
+  box-shadow: 0 0 10px #ccc;
+  color: #fff;
+}
+
+.btn:focus {
+  color: #fff;
+  outline: 0 !important;
+}
+
+.read-more-btn {
+  padding: 10px 25px 10px 25px;
+  margin-top: 25px;
+  background-color: transparent;
+  border-color: #fff;
+  font-size: 15px;
+}
+
+.read-more-btn:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Wobble Vertical Animation */
+@-webkit-keyframes wobble-vertical-on-hover {
+  16.65% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+  33.3% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+  }
+  49.95% {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+  }
+  66.6% {
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px);
+  }
+  83.25% {
+    -webkit-transform: translateY(1px);
+    transform: translateY(1px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes wobble-vertical-on-hover {
+  16.65% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+  33.3% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+  }
+  49.95% {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+  }
+  66.6% {
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px);
+  }
+  83.25% {
+    -webkit-transform: translateY(1px);
+    transform: translateY(1px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+.wobble-vertical-on-hover {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+.wobble-vertical-on-hover:hover, .wobble-vertical-on-hover:focus, .wobble-vertical-on-hover:active {
+  -webkit-animation-name: wobble-vertical-on-hover;
+  animation-name: wobble-vertical-on-hover;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+/* Header */
+#header {
+  height: 110px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+#header #logo {
+  margin: 14px 25px 0 0;
+}
+
+#header #logo img {
+  padding: 0;
+  margin: 0;
+  max-height: 80px;
+}
+
+@media (max-width: 768px) {
+  #header {
+    height: 50px;
+  }
+  #header #logo {
+    margin: 10px 0 0 0;
+  }
+  #header #logo img {
+    max-height: 30px;
+  }
+}
+
+#header .social-nav {
+  margin-top: 35px;
+}
+
+#header .social-nav a {
+  font-size: 24px;
+  color: #fff;
+}
+
+#header .social-nav img {
+  height: 32px;
+  width: 32px;
+}
+
+#header .social-nav a:hover {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+/* Banner */
+.banner {
+  display: table;
+  position: relative;
+  background-image: url(../img/cover.png);
+  background-size: cover;
+  padding: 150px 0;
+  color: #fff;
+  width: 100%;
+  height: 100vh;
+}
+
+.banner .container {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Scroll Mouse Button */
+.scroll-to {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  left: 50%;
+  margin-left: -64px;
+  cursor: pointer;
+}
+
+.scroll-to img {
+  height: 128px;
+  width: 128px;
+}
+
+/* General */
+.section-banner {
+  height: 100vh;
+}
+
+.section-banner p {
+  color: #fff;
+  font-size: 15px;
+}
+
+hr {
+  border: 1px solid #fff;
+}
+
+.landscape {
+  max-width: 170px;
+  height: auto;
+  padding: 0px 15px 0px 15px;
+}
+
+.potrait {
+  max-width: 110px;
+  height: auto;
+  padding: 0px 15px 0px 15px;
+}
+
+.brand {
+  padding-left: 30px;
+}
+
+/* Food Section */
+#food-cell-1 {
+  height: 100%;
+  background-color: #00b1b1;
+  color: #fff;
+}
+
+#food-cell-2 {
+  background-image: url(../img/cover_food.png);
+  background-size: cover;
+  color: #fff;
+}
+
+/* Fashion Section */
+#fashion-cell-1 {
+  height: 100%;
+  background-color: #E300B2;
+  color: #fff;
+}
+
+#fashion-cell-2 {
+  background-image: url(../img/cover_fashion.png);
+  background-size: cover;
+  color: #fff;
+}
+
+/* Entertainment Section */
+#entertainment-cell-1 {
+  height: 100%;
+  background-color: #fdb913;
+  color: #fff;
+}
+
+#entertainment-cell-2 {
+  background-image: url(../img/cover_entertainment.png);
+  background-size: cover;
+  color: #fff;
+}
+
+/* Other Section */
+#other-cell-1 {
+  height: 100%;
+  background-color: #00b1b1;
+  color: #fff;
+}
+
+#other-cell-2 {
+  background-color: #872175;
+  color: #fff;
+}
+
+.title {
+  display: table-cell;
+  /* height: auto; */
+  /* border: 1px solid black; */
+  float: none;
+}
+
+.title h1 {
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+}
+
+.title img {
+  position: absolute;
+  left: 0;
+  bottom: 20px;
+  height: 48px;
+  width: 48px;
+}
+
+.gallery-container {
+  position: relative;
+  width: 50%;
+  height: 50%;
+  padding: 0;
+}
+
+.gallery-container img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #000;
+}
+
+.gallery-container .overlay {
+  opacity: 0.7;
+}
+
+.gallery-container:hover .overlay {
+  opacity: 0;
+}
+
+.gallery-container .text {
+  color: white;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+/* Hide header on main banner */
+body.viewing-page-1 #header {
+  display: none;
+}
