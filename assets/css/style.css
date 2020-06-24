@@ -6,7 +6,6 @@ h1, h2, h3, h4, h5, h6 {
 p {
   line-height: 1.55;
   color: #fff;
-  font-size: 400;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -143,18 +142,6 @@ a, a:hover, a:active, a:visited, a:focus {
   max-height: 80px;
 }
 
-@media (max-width: 768px) {
-  #header {
-    height: 50px;
-  }
-  #header #logo {
-    margin: 10px 0 0 0;
-  }
-  #header #logo img {
-    max-height: 30px;
-  }
-}
-
 #header .social-nav {
   margin-top: 35px;
 }
@@ -235,7 +222,12 @@ hr {
   padding: 0px 15px 0px 15px;
 }
 
+.desc {
+  height: 65%!important;
+}
+
 .brand {
+  height: 25%!important;
   padding-left: 30px;
 }
 
@@ -299,6 +291,7 @@ hr {
 
 .title h1 {
   position: absolute;
+  font-size: 36px;
   left: 0;
   bottom: 10px;
 }
@@ -360,4 +353,115 @@ hr {
 /* Hide header on main banner */
 body.viewing-page-1 #header {
   display: none;
+}
+
+.section-container-desc {
+  height: 75%!important;
+}
+
+.section-container-img {
+  height: 25%!important;
+}
+
+@media only screen and (max-width: 600px) {
+  #header {
+    height: 60px;
+  }
+  #header #logo {
+    margin: 10px 0 0 0;
+  }
+  #header #logo img {
+    max-height: 40px;
+  }
+
+  .banner {
+    background-size: contain;
+  }
+
+  #food-cell-1 {
+    padding: 15px 20px 15px 20px;
+    height: 65vh;
+  }
+
+  #food-cell-2 {
+    background-size: contain;
+    height: 35vh;
+  }
+
+  #fashion-cell-1 {
+    padding: 15px 20px 15px 20px;
+    height: 65vh;
+  }
+
+  #fashion-cell-2 {
+    background-size: contain;
+    height: 35vh;
+  }
+
+  #entertainment-cell-1 {
+    padding: 15px 20px 15px 20px;
+    height: 65vh;
+  }
+
+  #entertainment-cell-2 {
+    background-size: contain;
+    height: 35vh;
+  }
+
+  #other-cell-1 {
+    height: 50vh;
+  }
+
+  #other-cell-2 {
+    height: 50vh;
+  }
+
+  h1 {
+    font-size: 36px;
+    text-align: center;
+  }
+
+  .section {
+    height: 50%;
+  }
+
+  .section-banner p {
+    font-size: 16px;
+  }
+
+  .landscape {
+    max-width: 100px;
+    padding: 15px 15px 15px 15px;
+  }
+  
+  .potrait {
+    max-width: 80px;
+    padding: 15px 15px 15px 15px;
+  }
+
+  .desc {
+    height: 65%!important;
+  }
+
+  .brand {
+    height: 35%!important;
+    padding: 15px 20px;
+  }
+
+  .title h1 {
+    position: absolute;
+    left: 0;
+    font-size: 24px;
+  }
+  
+  .title img {
+    position: absolute;
+    left: 0;
+    height: 28px;
+    width: 28px;
+  }
+
+  .gallery-container .text {
+    font-size: 10px;
+  }
 }
