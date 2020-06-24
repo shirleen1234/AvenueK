@@ -456,10 +456,12 @@ body.viewing-page-1 #header {
   .gallery-container .text {
     font-size: 10px;
   }
-
   .read-more-btn {
     padding: 5px 20px 5px 20px;
     margin-top: 0;
     font-size: 12px;
+  }
+  body.viewing-page-1 #header {
+    display: block;
   }
 }
